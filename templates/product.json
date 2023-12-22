@@ -213,6 +213,103 @@
         "padding_top": 12,
         "padding_bottom": 12
       }
+    },
+    "ac0b27b4-cfdb-48fa-ab74-b85f3feb669c": {
+      "type": "custom-compare-products",
+      "blocks": {
+        "8e74a331-380d-4595-ae68-002abed6b088": {
+          "type": "text",
+          "settings": {
+            "empty_heading": "",
+            "first_prod_headind": "Jones Mountain",
+            "second_prod_headind": "Westmark Camber",
+            "third_prod_headind": "Defenders"
+          }
+        },
+        "fadc3944-1a7e-42c9-839d-1bc704a51a90": {
+          "type": "table",
+          "settings": {
+            "product_name_text": "Carving",
+            "is_it_for_first_product_text": "",
+            "is_it_for_first_product": true,
+            "is_it_for_second_product_text": "",
+            "is_it_for_second_product": false,
+            "is_it_for_third_product_text": "Few",
+            "is_it_for_third_product": false
+          }
+        },
+        "d8447832-1eda-4594-94ed-f19b72bba801": {
+          "type": "table",
+          "settings": {
+            "product_name_text": "Performance",
+            "is_it_for_first_product_text": "",
+            "is_it_for_first_product": true,
+            "is_it_for_second_product_text": "",
+            "is_it_for_second_product": true,
+            "is_it_for_third_product_text": "",
+            "is_it_for_third_product": true
+          }
+        },
+        "c4917953-0074-43a8-a093-15e172144ed1": {
+          "type": "table",
+          "settings": {
+            "product_name_text": "Premium",
+            "is_it_for_first_product_text": "",
+            "is_it_for_first_product": false,
+            "is_it_for_second_product_text": "Very Few",
+            "is_it_for_second_product": false,
+            "is_it_for_third_product_text": "",
+            "is_it_for_third_product": true
+          }
+        },
+        "b76a858f-68b9-4097-ba25-6accfe6460de": {
+          "type": "table",
+          "settings": {
+            "product_name_text": "Strong",
+            "is_it_for_first_product_text": "",
+            "is_it_for_first_product": true,
+            "is_it_for_second_product_text": "",
+            "is_it_for_second_product": false,
+            "is_it_for_third_product_text": "",
+            "is_it_for_third_product": true
+          }
+        },
+        "8d6cb053-2bd5-4908-8bb3-3a3c0958e202": {
+          "type": "table",
+          "settings": {
+            "product_name_text": "Smoothness",
+            "is_it_for_first_product_text": "",
+            "is_it_for_first_product": true,
+            "is_it_for_second_product_text": "",
+            "is_it_for_second_product": true,
+            "is_it_for_third_product_text": "",
+            "is_it_for_third_product": true
+          }
+        },
+        "672984c7-ed5e-4abd-8e91-edc0d74b84b7": {
+          "type": "table",
+          "settings": {
+            "product_name_text": "Easy to use",
+            "is_it_for_first_product_text": "",
+            "is_it_for_first_product": false,
+            "is_it_for_second_product_text": "",
+            "is_it_for_second_product": true,
+            "is_it_for_third_product_text": "Few",
+            "is_it_for_third_product": false
+          }
+        }
+      },
+      "block_order": [
+        "8e74a331-380d-4595-ae68-002abed6b088",
+        "fadc3944-1a7e-42c9-839d-1bc704a51a90",
+        "d8447832-1eda-4594-94ed-f19b72bba801",
+        "c4917953-0074-43a8-a093-15e172144ed1",
+        "b76a858f-68b9-4097-ba25-6accfe6460de",
+        "8d6cb053-2bd5-4908-8bb3-3a3c0958e202",
+        "672984c7-ed5e-4abd-8e91-edc0d74b84b7"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -220,6 +317,7 @@
     "related-products",
     "cb9ad391-2d38-43e5-9750-0d0e2104aa83",
     "37ee5f48-f1c5-4ade-a743-1233be18a2f1",
-    "59b3780a-f5a0-4b8c-bf2a-561046ffd0e8"
+    "59b3780a-f5a0-4b8c-bf2a-561046ffd0e8",
+    "ac0b27b4-cfdb-48fa-ab74-b85f3feb669c"
   ]
 }
