@@ -6,7 +6,7 @@
         "8fd2baed-75d6-483a-a3d3-aee93904bae0": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Go To Product →",
+            "button_label_1": "Go To Products →",
             "button_link_1": "shopify:\/\/products\/the-complete-snowboard",
             "button_style_secondary_1": false,
             "button_label_2": "",
