@@ -113,40 +113,28 @@
         "template--17254651166934__cb9ad391-2d38-43e5-9750-0d0e2104aa83-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "heading": "<strong>Precision Carving<\/strong>",
+            "heading_size": "h2"
           }
         },
         "template--17254651166934__cb9ad391-2d38-43e5-9750-0d0e2104aa83-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "template--17254651166934__cb9ad391-2d38-43e5-9750-0d0e2104aa83-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<p>Achieve new levels of agility and maneuverability thanks to our lightweight construction, allowing you to dominate the mountain with ease.<\/p>"
           }
         }
       },
       "block_order": [
         "template--17254651166934__cb9ad391-2d38-43e5-9750-0d0e2104aa83-heading-1",
-        "template--17254651166934__cb9ad391-2d38-43e5-9750-0d0e2104aa83-text-1",
-        "template--17254651166934__cb9ad391-2d38-43e5-9750-0d0e2104aa83-button-1"
+        "template--17254651166934__cb9ad391-2d38-43e5-9750-0d0e2104aa83-text-1"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     }
   },
