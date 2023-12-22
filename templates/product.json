@@ -183,12 +183,43 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "59b3780a-f5a0-4b8c-bf2a-561046ffd0e8": {
+      "type": "rich-text",
+      "blocks": {
+        "67d141ab-bbfb-4345-885c-2ab9bd2f9bf6": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>All Boards Comparison<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "d16f5a10-4fa8-4b8e-a2c3-1d5df1dfddc1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Seamlessly transition between turns and jumps with a snowboard engineered for smooth and fluid movements, making each run a seamless experience.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "67d141ab-bbfb-4345-885c-2ab9bd2f9bf6",
+        "d16f5a10-4fa8-4b8e-a2c3-1d5df1dfddc1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "cb9ad391-2d38-43e5-9750-0d0e2104aa83",
-    "37ee5f48-f1c5-4ade-a743-1233be18a2f1"
+    "37ee5f48-f1c5-4ade-a743-1233be18a2f1",
+    "59b3780a-f5a0-4b8c-bf2a-561046ffd0e8"
   ]
 }
