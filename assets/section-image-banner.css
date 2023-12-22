@@ -57,7 +57,7 @@
 
   .banner--medium.banner--mobile-bottom:not(.banner--adapt) .banner__media,
   .banner--medium.banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt) > .banner__media {
-    height: 34rem;
+    height: 64rem;
   }
 
   .banner--large.banner--mobile-bottom:not(.banner--adapt) .banner__media,
@@ -219,7 +219,7 @@
 @media screen and (max-width: 749px) {
   .banner--mobile-bottom .banner__media,
   .banner--stacked:not(.banner--mobile-bottom) .banner__media {
-    position: relative;
+    position: "";
   }
 
   .banner--stacked.banner--adapt .banner__content {
@@ -333,6 +333,7 @@
   .banner:not(.banner--mobile-bottom) .field__input,
   .banner--mobile-bottom:not(.banner--stacked) .banner__box.color-background-1 {
     background: transparent;
+    top: 35rem;
   }
 }
 
