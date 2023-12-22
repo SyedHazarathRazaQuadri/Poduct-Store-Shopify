@@ -1,6 +1,6 @@
 {
   "current": {
-    "logo_width": 70,
+    "logo_width": 50,
     "type_header_font": "poppins_n4",
     "heading_scale": 120,
     "type_body_font": "poppins_n4",
@@ -117,6 +117,7 @@
     "show_cart_note": true,
     "cart_drawer_collection": "",
     "cart_color_scheme": "background-1",
+    "checkout_header_image": "shopify:\/\/shop_images\/cards-image.jpg",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
