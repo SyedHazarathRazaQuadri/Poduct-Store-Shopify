@@ -7,7 +7,7 @@
           "type": "text",
           "settings": {
             "text": "This Snowboard Vendor",
-            "font_color": "",
+            "font_color": "#fe523c",
             "text_style": "subtitle"
           }
         },
@@ -21,6 +21,14 @@
           "settings": {
           }
         },
+        "a141e851-633c-459c-9f72-66c5b9c4a29d": {
+          "type": "text",
+          "settings": {
+            "text": "Our snowboard combines innovative design, advanced materials, and a dash of adrenaline.",
+            "font_color": "",
+            "text_style": "body"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -30,6 +38,14 @@
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
+          }
+        },
+        "0b1864de-d8c8-4ae2-8d33-a6d7b18f970c": {
+          "type": "text",
+          "settings": {
+            "text": "Conquer the mountains with precision and finesse",
+            "font_color": "#077542",
+            "text_style": "body"
           }
         },
         "buy_buttons": {
@@ -49,8 +65,10 @@
         "vendor",
         "title",
         "price",
+        "a141e851-633c-459c-9f72-66c5b9c4a29d",
         "variant_picker",
         "quantity_selector",
+        "0b1864de-d8c8-4ae2-8d33-a6d7b18f970c",
         "buy_buttons",
         "description"
       ],
