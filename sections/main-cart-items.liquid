@@ -36,7 +36,7 @@
 
     <div class="cart__warnings">
       <h1 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h1>
-      <a href="{{ routes.all_products_collection_url }}" class="button">
+      <a href="{{ section.settings.product_url }}" class="button">
         {{ 'general.continue_shopping' | t }}
       </a>
 
@@ -459,6 +459,11 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "background-1"
+    },
+    {
+      "type": "url",
+      "id": "product_url",
+      "label": "Add URL Where to redirect"
     },
     {
       "type": "header",

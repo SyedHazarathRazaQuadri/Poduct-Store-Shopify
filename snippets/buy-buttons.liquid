@@ -93,9 +93,6 @@
             </span>
             {%- render 'loading-spinner' -%}
           </button>
-          {%- if show_dynamic_checkout -%}
-            {{ form | payment_button }}
-          {%- endif -%}
         </div>
       {%- endform -%}
     </product-form>
@@ -147,3 +144,10 @@
     <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 </div>
+<style>
+  .product-form__submit{
+    background: #FE523C;
+    color: white;
+    font-size: 20px;
+  }
+</style>
