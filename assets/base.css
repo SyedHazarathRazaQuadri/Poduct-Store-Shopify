@@ -3044,6 +3044,7 @@ details-disclosure > details {
 .global-media-settings--full-width iframe,
 .global-media-settings--full-width .placeholder-svg {
   border-radius: 0;
+  border: 0.1px solid #dcdada;
   border-left: none;
   border-right: none;
 }
