@@ -2376,7 +2376,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 .header {
   display: grid;
   grid-template-areas: 'left-icons heading icons';
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
   align-items: center;
 }
 
@@ -2983,8 +2983,6 @@ details-disclosure > details {
   bottom: calc(var(--text-boxes-border-width) * -1);
   left: calc(var(--text-boxes-border-width) * -1);
   border-radius: var(--text-boxes-radius);
-  box-shadow: var(--text-boxes-shadow-horizontal-offset) var(--text-boxes-shadow-vertical-offset)
-    var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
   z-index: -1;
 }
 

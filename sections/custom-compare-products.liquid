@@ -1,0 +1,364 @@
+{% for block in section.blocks %}
+  <div class="resp-table screen_element">
+    <div class="resp-table-body">
+      {%- if block.settings.first_prod_headind != blank -%}
+          <div class="resp-table-row headings-row">
+              <div class="table-body-cell" style="display: block;"></div>
+              <div class="table-body-cell">{{ block.settings.first_prod_headind }}</div>
+              <div class="table-body-cell">{{ block.settings.second_prod_headind }}</div>
+              <div class="table-body-cell">{{ block.settings.third_prod_headind }}</div>
+          </div>
+      {% endif %}
+      {%- if block.settings.product_name_text != blank -%}
+          <div class="resp-table-row products_row">
+              {%- if block.settings.product_name_text != blank -%}
+              <div class="table-body-cell">{{ block.settings.product_name_text }}</div>
+              {% if block.settings.is_it_for_first_product_text != blank %}
+                  <div class="table-body-cell">{{ block.settings.is_it_for_first_product_text }}</div>
+                  {% else%}
+                  <div class="table-body-cell">
+                      {%- if block.settings.is_it_for_first_product != false -%}
+                      <img
+                          src="{{ 'Tick.svg' | asset_url }}"
+                          alt="Tick"
+                          class="svg_property"
+                          loading="lazy"
+                          width=""
+                          height=""
+                      />
+                      {%- else -%}
+                      <img
+                          src="{{ 'Cross.svg' | asset_url }}"
+                          alt="Cross"
+                          class="svg_property"
+                          loading="lazy"
+                          width=""
+                          height=""
+                      />
+                      {% endif %}
+                  </div>
+              {% endif %}
+
+              {% if block.settings.is_it_for_second_product_text != blank %}
+                  <div class="table-body-cell">{{ block.settings.is_it_for_second_product_text }}</div>
+                  {% else%}
+                  <div class="table-body-cell">
+                      {%- if block.settings.is_it_for_second_product != false -%}
+                      <img
+                          src="{{ 'Tick.svg' | asset_url }}"
+                          alt="Tick"
+                          class="svg_property"
+                          loading="lazy"
+                          width=""
+                          height=""
+                      />
+                      {%- else -%}
+                      <img
+                          src="{{ 'Cross.svg' | asset_url }}"
+                          alt="Cross"
+                          class="svg_property"
+                          loading="lazy"
+                          width=""
+                          height=""
+                      />
+                      {% endif %}
+                  </div>
+              {% endif %}
+
+              {% if block.settings.is_it_for_third_product_text != blank %}
+                  <div class="table-body-cell">{{ block.settings.is_it_for_third_product_text }}</div>
+                  {% else%}
+                  <div class="table-body-cell">
+                      {%- if block.settings.is_it_for_third_product != false -%}
+                      <img
+                          src="{{ 'Tick.svg' | asset_url }}"
+                          alt="Tick"
+                          class="svg_property"
+                          loading="lazy"
+                          width=""
+                          height=""
+                      />
+                      {%- else -%}
+                      <img
+                          src="{{ 'Cross.svg' | asset_url }}"
+                          alt="Cross"
+                          class="svg_property"
+                          loading="lazy"
+                          width=""
+                          height=""
+                      />
+                      {% endif %}
+                  </div>
+              {% endif %}
+              </div>
+              {% endif %}
+          </div>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
+
+<style>
+#section-{{ section.id }} .Heading,
+#section-{{ section.id }} .flickity-page-dots {
+color: {{ block.settings.text_color }};
+}
+
+#section-{{ section.id }} .Button {
+color: {{ block.settings.button_color }};
+border-color: {{ block.settings.button_background }};
+}
+
+#section-{{ section.id }} .Button::before {
+background-color: {{ block.settings.button_background }};
+}
+
+{%- if block.show_button_transition -%}
+@media (-moz-touch-enabled: 0), (hover: hover) {
+  #section-{{ section.id }} .Button:hover {
+    color: {{ block.settings.button_background }};
+  }
+}
+{%- endif -%}
+{% if product.images[1] %}
+.Carousel--insideDots .flickity-page-dots li:first-child
+{
+display: none;
+}
+{% endif %}
+
+.resp-table-row{
+  display: flex;
+}
+.resp-table {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.resp-table-heading {
+  display: flex;
+  padding: 0;
+}
+.resp-table-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.headings-row .table-body-cell{
+  padding: 10.5px 10px;
+  color: black;
+  font-weight: normal;
+  width: 192px;
+  height: 100px;
+  padding-top: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headings-row .table-body-cell:nth-child(2){
+  background: #F6EEE4;
+  color: #FE523C;
+}
+.products_row .table-body-cell:nth-child(2){
+  background: #F6EEE4;
+}
+.headings-row .table-body-cell:first-child {
+  width: 220px;
+}
+.products_row .table-body-cell:first-child {
+  width: 220px;
+  color: black;
+}
+.products_row .table-body-cell{
+  width: 192px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products_row .table-body-cell img {
+  max-width: 18px;
+}
+.table-body-cell {
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  line-height: 1.42857143;
+  vertical-align: top;
+  text-align: center;
+  color: #C3AF9E;
+  font-size: 16px;
+  min-height: 46px;
+  font-weight: bold;
+}
+.heading_styles {
+  color: #183D89;
+}
+.mobile-heading {
+  font-size: 13px;
+}
+.img_property {
+  max-height: 150px;
+  padding: 1rem 0;
+}
+.mobile_table_heading {
+  background-color: #F5F5F5;
+  max-width: 100%;
+  text-align: left;
+  padding: 2px 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+@media screen and (min-width: 992px) {
+  .mobile_element {
+    display: none;
+  }
+  .Slideshow--fullscreen {
+    height: 85vh !important;
+  }
+  .resp-table-row {
+    background-color: white;
+  }
+  .heading_styles {
+    min-width: 170px;
+    max-width: 170px;
+    margin : 0 auto;
+  }
+  .screen_heading{
+    margin-bottom: 20px;
+  }
+  .image-body{
+      padding: 28px 10px;
+      max-height: 100px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .resp-table{
+    background-color : white;
+  }
+  .products_row .table-body-cell:first-child {
+    min-width: 110px;
+}
+  .resp-table-body {
+    display: flex;
+    flex-direction: row !important;
+  }
+  .Slideshow--fullscreen {
+    height: 120vh !important;
+  }
+  .resp-table-row {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+  .headings-row .table-body-cell:first-child, .first_product_heading{
+    height: 57px !important;
+    min-width: 110px;
+  }
+  .first_product_column .table-body-cell{
+    padding: 8px 10px;
+  }
+  .table-body-cell{
+    flex:1;
+    min-width: 90px;
+    font-size:13px;
+    height: 56px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .mobile_heading{
+    min-height: 56px;
+  }
+  .subheading_styles{
+    color: #374957;
+    font-weight: 400;
+  }
+}
+</style>
+{% schema %}
+{
+"name": "Custom Compare Table",
+"class": "index-section",
+"settings": [],
+"max_blocks": 25,
+"blocks": [
+{
+  "type": "text",
+  "name": {
+    "en": "Table Heading"
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "empty_heading",
+      "label": "First Empty Heading"
+      },
+      {
+      "type": "text",
+      "id": "first_prod_headind",
+      "label": "1st Product Heading"
+      },
+      {
+        "type": "text",
+        "id": "second_prod_headind",
+        "label": "2nd Product Heading"
+      },
+      {
+        "type": "text",
+        "id": "third_prod_headind",
+        "label": "3rd Product Heading"
+      }
+  ]
+},
+{
+  "type": "table",
+  "name": {
+    "en": "Table Row"
+  },
+  "settings": [
+      {
+      "type": "text",
+      "id": "product_name_text",
+      "label": "Product Name"
+      },
+      {
+        "type": "text",
+        "id": "is_it_for_first_product_text",
+        "label": "is it for first product"
+      },
+      {
+        "type": "checkbox",
+        "id": "is_it_for_first_product",
+        "label": "is it for first product"
+      },
+      {
+      "type": "text",
+      "id": "is_it_for_second_product_text",
+      "label": "Is it for second product"
+      },
+      {
+        "type": "checkbox",
+        "id": "is_it_for_second_product",
+        "label": "Is it for second product"
+      },
+      {
+      "type": "text",
+      "id": "is_it_for_third_product_text",
+      "label": "Is it for third product"
+      },
+      {
+        "type": "checkbox",
+        "id": "is_it_for_third_product",
+        "label": "Is it for third product"
+      }
+  ]
+}
+],
+"presets": [
+{
+"name": "Custom Compare Table",
+"category": "Table",
+"blocks": []
+}
+]
+}
+{% endschema %}

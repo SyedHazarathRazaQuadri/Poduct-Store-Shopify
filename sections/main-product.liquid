@@ -80,10 +80,10 @@
             {%- when '@app' -%}
               {% render block %}
             {%- when 'text' -%}
-              <p
+              <p style="color: {{ block.settings.font_color }}"
                 class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
-                {{ section.settings.main_product_text }}>
-                {{- section.settings.main_product_text -}}
+                {{ block.shopify_attributes }}>
+                {{- block.settings.text -}}
               </p>
             {%- when 'title' -%}
               <div class="product__title" {{ block.shopify_attributes }}>
@@ -95,7 +95,7 @@
                 </a>
               </div>
             {%- when 'price' -%}
-              <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+              <div style="font-weight: bold; font-size: 20px;" class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
                   product: product,
                   use_variant: true,
@@ -674,13 +674,6 @@
   "name": "t:sections.main-product.name",
   "tag": "section",
   "class": "section",
-  "settings":[
-    {
-      "type": "text",
-      "id": "main_product_text",
-      "label": "Product Custom Text"
-    }
-  ],
   "blocks": [
     {
       "type": "@app"
@@ -694,6 +687,11 @@
           "id": "text",
           "default": "Text block",
           "label": "t:sections.main-product.blocks.text.settings.text.label"
+        },
+        {
+          "type": "color",
+          "id": "font_color",
+          "label": "Text Color"
         },
         {
           "type": "select",

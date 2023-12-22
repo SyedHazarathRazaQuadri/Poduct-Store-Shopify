@@ -260,6 +260,7 @@ cart-drawer-items {
 
 .cart-drawer .cart-item > td + td {
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .cart-drawer .cart-item__details {

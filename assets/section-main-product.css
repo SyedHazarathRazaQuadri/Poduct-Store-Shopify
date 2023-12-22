@@ -183,6 +183,8 @@ variant-selects {
 
 fieldset.product-form__input .form__label {
   margin-bottom: 0.2rem;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .product-form__input input[type='radio'] {
@@ -453,6 +455,8 @@ a.product__text {
 
 .product-form__quantity .form__label {
   margin-bottom: 0.6rem;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .price-per-item__label.form__label {

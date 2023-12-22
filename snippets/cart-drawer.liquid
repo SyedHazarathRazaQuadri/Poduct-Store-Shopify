@@ -448,25 +448,6 @@
         </form>
       </cart-drawer-items>
       <div class="drawer__footer">
-        {%- if settings.show_cart_note -%}
-          <details id="Details-CartDrawer">
-            <summary>
-              <span class="summary__title">
-                {{ 'sections.cart.note' | t }}
-                {% render 'icon-caret' %}
-              </span>
-            </summary>
-            <cart-note class="cart__note field">
-              <label class="visually-hidden" for="CartDrawer-Note">{{ 'sections.cart.note' | t }}</label>
-              <textarea
-                id="CartDrawer-Note"
-                class="text-area text-area--resize-vertical field__input"
-                name="note"
-                placeholder="{{ 'sections.cart.note' | t }}"
-              >{{ cart.note }}</textarea>
-            </cart-note>
-          </details>
-        {%- endif -%}
 
         <!-- Start blocks -->
         <!-- Subtotals -->
@@ -503,10 +484,29 @@
             {%- endif -%}
           </small>
         </div>
-
         <!-- CTAs -->
+        <div style="justify-content: center;" class="cart__ctas" {{ block.shopify_attributes }}>
+          <noscript>
+            <button type="submit" class="cart__update-button button button--secondary" form="CartDrawer-Form">
+              {{ 'sections.cart.update' | t }}
+            </button>
+          </noscript>
 
-        <div class="cart__ctas" {{ block.shopify_attributes }}>
+          <button
+            type="submit"
+            id="CartDrawer-Checkout"
+            class="cart__checkout-button button"
+            name="viewcart"
+            style="width: 60%; margin-bottom:1rem; background: #204d4d;"
+            form="CartDrawer-Form"
+            {% if cart == empty %}
+              disabled
+            {% endif %}
+          >
+            View Cart
+          </button>
+        </div>
+        <div style="justify-content: center;" class="cart__ctas" {{ block.shopify_attributes }}>
           <noscript>
             <button type="submit" class="cart__update-button button button--secondary" form="CartDrawer-Form">
               {{ 'sections.cart.update' | t }}
@@ -518,6 +518,7 @@
             id="CartDrawer-Checkout"
             class="cart__checkout-button button"
             name="checkout"
+            style="width: 80%; margin-bottom:2rem"
             form="CartDrawer-Form"
             {% if cart == empty %}
               disabled
