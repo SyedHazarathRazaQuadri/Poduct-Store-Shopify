@@ -338,6 +338,7 @@
 }
 
 .banner__box {
+  background: transparent;
   padding: 4rem 3.5rem;
   position: relative;
   height: fit-content;
