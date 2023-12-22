@@ -150,7 +150,7 @@
         "template--17254651166934__37ee5f48-f1c5-4ade-a743-1233be18a2f1-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Glide effortlessly down the slopes with a snowboard designed for peak performance, offering superior control and responsiveness.<br\/>And blending style with functionality for a ride like no other.<\/p>",
+            "text": "<p>Glide effortlessly down the slopes with a snowboard designed for peak performance, offering superior control and responsiveness.<br\/>And blending style with functionality for a ride like no other. responsiveness.<br\/>And blending<\/p>",
             "text_style": "body"
           }
         },
