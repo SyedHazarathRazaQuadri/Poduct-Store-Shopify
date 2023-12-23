@@ -150,7 +150,7 @@
         "template--17254651166934__37ee5f48-f1c5-4ade-a743-1233be18a2f1-button-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/snowboarding-image.webp",
+        "image": "shopify:\/\/shop_images\/cards-image.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -339,6 +339,65 @@
       "settings": {
       }
     },
+    "665b4bed-df60-4658-8372-4232c44e2f25": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17254651166934__665b4bed-df60-4658-8372-4232c44e2f25-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/snowboard-card2.jpg",
+            "show_reviews": true,
+            "title": "",
+            "text": "<p>The Never Summer Proto Type Two is all about fun on the slopes. Its playful nature makes carving a breeze, and the board's responsiveness.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "15b3c679-42b4-49b9-b1ff-cdc251c63b98": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/snowboard-winter.jpg",
+            "show_reviews": true,
+            "title": "",
+            "text": "<p>The Never Summer Proto Type Two is all about fun on the slopes. Its playful nature makes carving a breeze, and the board's responsiveness.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c03153ea-f384-411a-86de-981237b57c3c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/snowboard-card2.jpg",
+            "show_reviews": true,
+            "title": "",
+            "text": "<p>The Never Summer Proto Type Two is all about fun on the slopes. Its playful nature makes carving a breeze, and the board's responsiveness.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17254651166934__665b4bed-df60-4658-8372-4232c44e2f25-column-1",
+        "15b3c679-42b4-49b9-b1ff-cdc251c63b98",
+        "c03153ea-f384-411a-86de-981237b57c3c"
+      ],
+      "settings": {
+        "title": "Our Happy Customers",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 16
+      }
+    },
     "799cc56c-b622-4113-8a2b-19d88e77e22a": {
       "type": "collapsible-content",
       "blocks": {
@@ -439,6 +498,7 @@
     "c966838a-c7e0-4254-bdb5-d9e033a041f7",
     "59b3780a-f5a0-4b8c-bf2a-561046ffd0e8",
     "ac0b27b4-cfdb-48fa-ab74-b85f3feb669c",
+    "665b4bed-df60-4658-8372-4232c44e2f25",
     "799cc56c-b622-4113-8a2b-19d88e77e22a",
     "related-products"
   ]
