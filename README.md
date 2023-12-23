@@ -1,1 +1,1 @@
-<h1 style="text-align: center">Website Password is "syed"</h1>
+<h1 style="padding-left: 5rem; text-align: center">Website Password is "syed"</h1>
