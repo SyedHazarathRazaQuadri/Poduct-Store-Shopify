@@ -8,6 +8,7 @@
 
 .multicolumn .title-wrapper-with-link {
   margin-top: 0;
+  justify-content: center;
 }
 
 @media screen and (max-width: 749px) {
@@ -60,13 +61,12 @@
 }
 
 .multicolumn:not(.background-none) .multicolumn-card {
-  background: rgb(var(--color-background));
+  background: white;
   height: 100%;
 }
 
 .multicolumn.background-primary .multicolumn-card {
-  background: rgb(var(--color-background))
-    linear-gradient(rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04));
+  background: white;
 }
 
 .multicolumn-list h3 {
@@ -132,7 +132,10 @@
 }
 
 .multicolumn-card__info {
-  padding: 2.5rem;
+  padding: 1.5rem;
+}
+.tt-trim {
+  padding: 2rem 0 0 0;
 }
 
 .background-none .multicolumn-card__info {
