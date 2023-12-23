@@ -172,6 +172,12 @@ cart-drawer {
 .cart-drawer .drawer__cart-items-wrapper {
   flex-grow: 1;
 }
+.cart_update_message{
+  background: #bdeff1;
+  padding: 0 1px;
+  border-radius: 30px;
+  text-align: center;
+}
 
 .cart-drawer .cart-items,
 .cart-drawer tbody {

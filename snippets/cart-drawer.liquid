@@ -30,6 +30,7 @@
       {%- if cart == empty -%}
         <div class="drawer__inner-empty">
           <div class="cart-drawer__warnings center{% if settings.cart_drawer_collection != blank %} cart-drawer__warnings--has-collection{% endif %}">
+            <p>Hey! Checkout Our Latest Awesome Prodcuts..🤩</p>
             <div class="cart-drawer__empty-content">
               <h2 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h2>
               <button
@@ -85,6 +86,14 @@
             {%- if cart != empty -%}
               <div class="drawer__cart-items-wrapper">
                 <table class="cart-items" role="table">
+                  <div class="cart_update_message">
+                    {% if cart.item_count == 1 %}
+                      <p>Add One more product to get 10% Off 🔓</p>
+                    {% endif %}
+                    {% if cart.item_count > 1 %}
+                      <p>Congratulations! you got 10% Off ⚡️✨</p>
+                    {% endif %}
+                  </div>
                   <thead role="rowgroup">
                     <tr role="row">
                       <th id="CartDrawer-ColumnProductImage" role="columnheader">
