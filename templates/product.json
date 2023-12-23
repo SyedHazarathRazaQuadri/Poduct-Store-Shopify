@@ -59,6 +59,13 @@
           "type": "description",
           "settings": {
           }
+        },
+        "4c80c147-662e-4865-9849-9c5c64d8fa45": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping",
+            "icon": "truck"
+          }
         }
       },
       "block_order": [
@@ -70,7 +77,8 @@
         "quantity_selector",
         "0b1864de-d8c8-4ae2-8d33-a6d7b18f970c",
         "buy_buttons",
-        "description"
+        "description",
+        "4c80c147-662e-4865-9849-9c5c64d8fa45"
       ],
       "settings": {
         "enable_sticky_info": true,
