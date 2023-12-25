@@ -12,85 +12,84 @@
       {%- if block.settings.product_name_text != blank -%}
           <div class="resp-table-row products_row">
               {%- if block.settings.product_name_text != blank -%}
-              <div class="table-body-cell">{{ block.settings.product_name_text }}</div>
-              {% if block.settings.is_it_for_first_product_text != blank %}
-                  <div class="table-body-cell">{{ block.settings.is_it_for_first_product_text }}</div>
-                  {% else%}
-                  <div class="table-body-cell">
-                      {%- if block.settings.is_it_for_first_product != false -%}
-                      <img
-                          src="{{ 'Tick.svg' | asset_url }}"
-                          alt="Tick"
-                          class="svg_property"
-                          loading="lazy"
-                          width=""
-                          height=""
-                      />
-                      {%- else -%}
-                      <img
-                          src="{{ 'Cross.svg' | asset_url }}"
-                          alt="Cross"
-                          class="svg_property"
-                          loading="lazy"
-                          width=""
-                          height=""
-                      />
-                      {% endif %}
-                  </div>
-              {% endif %}
+                <div class="table-body-cell">{{ block.settings.product_name_text }}</div>
+                {% if block.settings.is_it_for_first_product_text != blank %}
+                    <div class="table-body-cell">{{ block.settings.is_it_for_first_product_text }}</div>
+                    {% else%}
+                    <div class="table-body-cell">
+                        {%- if block.settings.is_it_for_first_product != false -%}
+                        <img
+                            src="{{ 'Tick.svg' | asset_url }}"
+                            alt="Tick"
+                            class="svg_property"
+                            loading="lazy"
+                            width=""
+                            height=""
+                        />
+                        {%- else -%}
+                        <img
+                            src="{{ 'Cross.svg' | asset_url }}"
+                            alt="Cross"
+                            class="svg_property"
+                            loading="lazy"
+                            width=""
+                            height=""
+                        />
+                        {% endif %}
+                    </div>
+                {% endif %}
 
-              {% if block.settings.is_it_for_second_product_text != blank %}
-                  <div class="table-body-cell">{{ block.settings.is_it_for_second_product_text }}</div>
-                  {% else%}
-                  <div class="table-body-cell">
-                      {%- if block.settings.is_it_for_second_product != false -%}
-                      <img
-                          src="{{ 'Tick.svg' | asset_url }}"
-                          alt="Tick"
-                          class="svg_property"
-                          loading="lazy"
-                          width=""
-                          height=""
-                      />
-                      {%- else -%}
-                      <img
-                          src="{{ 'Cross.svg' | asset_url }}"
-                          alt="Cross"
-                          class="svg_property"
-                          loading="lazy"
-                          width=""
-                          height=""
-                      />
-                      {% endif %}
-                  </div>
-              {% endif %}
+                {% if block.settings.is_it_for_second_product_text != blank %}
+                    <div class="table-body-cell">{{ block.settings.is_it_for_second_product_text }}</div>
+                    {% else%}
+                    <div class="table-body-cell">
+                        {%- if block.settings.is_it_for_second_product != false -%}
+                        <img
+                            src="{{ 'Tick.svg' | asset_url }}"
+                            alt="Tick"
+                            class="svg_property"
+                            loading="lazy"
+                            width=""
+                            height=""
+                        />
+                        {%- else -%}
+                        <img
+                            src="{{ 'Cross.svg' | asset_url }}"
+                            alt="Cross"
+                            class="svg_property"
+                            loading="lazy"
+                            width=""
+                            height=""
+                        />
+                        {% endif %}
+                    </div>
+                {% endif %}
 
-              {% if block.settings.is_it_for_third_product_text != blank %}
-                  <div class="table-body-cell">{{ block.settings.is_it_for_third_product_text }}</div>
-                  {% else%}
-                  <div class="table-body-cell">
-                      {%- if block.settings.is_it_for_third_product != false -%}
-                      <img
-                          src="{{ 'Tick.svg' | asset_url }}"
-                          alt="Tick"
-                          class="svg_property"
-                          loading="lazy"
-                          width=""
-                          height=""
-                      />
-                      {%- else -%}
-                      <img
-                          src="{{ 'Cross.svg' | asset_url }}"
-                          alt="Cross"
-                          class="svg_property"
-                          loading="lazy"
-                          width=""
-                          height=""
-                      />
-                      {% endif %}
-                  </div>
-              {% endif %}
-              </div>
+                {% if block.settings.is_it_for_third_product_text != blank %}
+                    <div class="table-body-cell">{{ block.settings.is_it_for_third_product_text }}</div>
+                    {% else%}
+                    <div class="table-body-cell">
+                        {%- if block.settings.is_it_for_third_product != false -%}
+                        <img
+                            src="{{ 'Tick.svg' | asset_url }}"
+                            alt="Tick"
+                            class="svg_property"
+                            loading="lazy"
+                            width=""
+                            height=""
+                        />
+                        {%- else -%}
+                        <img
+                            src="{{ 'Cross.svg' | asset_url }}"
+                            alt="Cross"
+                            class="svg_property"
+                            loading="lazy"
+                            width=""
+                            height=""
+                        />
+                        {% endif %}
+                    </div>
+                {% endif %}
               {% endif %}
           </div>
       {% endif %}
